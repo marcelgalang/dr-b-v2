@@ -1,8 +1,8 @@
 import { loadCartsSuccess } from '../modules/Carts'
-
+  const API_URL = `https://dr-b-api.herokuapp.com/`
   export const getAllCarts =() => dispatch => {
 
-    fetch(`http://localhost:3000/api/carts`)
+    fetch(`${API_URL}` + `api/carts`)
     .then(response => response.json())
     .then(carts => {
       dispatch(loadCartsSuccess(carts))

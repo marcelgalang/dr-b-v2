@@ -2,7 +2,7 @@ import { receiveProducts } from '../modules/Products'
 
 const url = `localhost:3000`
 export const getAllProducts = () => dispatch => {
-  fetch(`http://localhost:3000/api/products`)
+  fetch(`https://dr-b-api.herokuapp.com/`)
     .then(response => response.json())
     .then(products => {
     dispatch(receiveProducts(products))
