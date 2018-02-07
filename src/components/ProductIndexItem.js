@@ -9,19 +9,17 @@ const ProductIndexItem = ({product, onAddToCartClicked}) => {
   const imgChoice = product.category.title == 'Phone' ?
       '/imgs/iphone.png' : product.category.title == 'Mac' ? '/imgs/macbook.png' : '/imgs/ipad.png'
 
-  // const onClickShowDetail = () => {
 
-  // }
   return (
       <article>
 
           <img src= {`${process.env.PUBLIC_URL +imgChoice}`} width="100px" height="100px" alt="product img"/>
 
-          <span ><Link to={`/products/${product.id}`} ><span>{product.title} </span></Link>
-            | &#36;{product.price} |</span>
+          <span ><h6>{product.title} </h6>
+            &#36;{product.price} |</span>
 
 
-            <span>{product.description}</span>
+            <span> {product.description}</span>
 
 
         <Button

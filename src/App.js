@@ -16,18 +16,18 @@ const App = ({ products }) => (
         <Page>
             <ScrollableAnchor id={'top'}>
               <Section styles='hero'>
-                <span><img src= {`${process.env.PUBLIC_URL}/imgs/logo-dr-b.png`}/></span>
+                <span><img src= {`${process.env.PUBLIC_URL}/imgs/logo-dr-b-circle.png`} size={300} round={true}/></span>
                 <h1>
-                  <div>WE FIX JUST ABOUT EVERYTHING</div>
+                  <div id={'about'}>WE FIX JUST ABOUT EVERYTHING</div>
                   <span>MACS, PCS, TABLETS, CONSOLES, & SMART PHONES</span>
                 </h1>
                   <div>
                     Aside from being gurus in the Mac department, we are experienced in repairing all sorts of issues in a wide range of electronic devices.
                   </div>
                   <div>
-                      <h3><a href='#products'>Phone Services |</a>
-                      <a href='#products'> Tablet Services |</a>
-                      <a href='#products'> Mac Services</a></h3>
+                      <h3>
+                        <a href='#products'>| Products And Services |</a>
+                      </h3>
                   </div>
 
               </Section>
@@ -48,7 +48,7 @@ const App = ({ products }) => (
              </section>
             </ScrollableAnchor>
 
-            <p>Contact us here: repairs@drb.email.com</p>
+            <p>Contact us here: repairs@drb_email.com</p>
 
 
 
